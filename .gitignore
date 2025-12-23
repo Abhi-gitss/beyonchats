@@ -1,0 +1,10 @@
+/node_modules
+/vendor
+.env
+.DS_Store
+/backend/vendor
+/backend/node_modules
+/backend/.env
+/frontend/node_modules
+/processor/node_modules
+/processor/.env
