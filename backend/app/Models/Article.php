@@ -10,13 +10,14 @@ class Article extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'summary', 'content', 'source_url', 
-        'image_url', 'published_at', 'generated_content', 
-        'citations', 'is_processed'
-    ];
-
-    protected $casts = [
-        'citations' => 'array',
-        'is_processed' => 'boolean',
+        'title', 
+        'content', 
+        'source_url', 
+        'image_url', 
+        'published_at',
+        // These are the new fields we need to allow updates for:
+        'generated_content',
+        'citations',
+        'is_processed'
     ];
 }
